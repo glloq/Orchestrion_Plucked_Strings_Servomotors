@@ -1,4 +1,6 @@
 # Orchestrion_Plucked_Strings_Servomotors
+> [!WARNING]
+> j'ai à peine commencé rien n'est fait !
 
 Le projet permet de controller un instrument à cordes grattée (guitare, basse, ukulele, etc ...) en utilisant des servomoteurs pour actionner les frettes et gratter les cordes en fonction des messages midi recu via usb.  
 
