@@ -23,6 +23,7 @@ le code permet de s'adapter a tout les cas d'utilisations, il suffit d'indiquer 
 ```
 #define NUM_STRINGS 4         // Nombre de cordes
 #define PCA_NUMBER_USED 4      // Nombre de pca à initialiser
+#define PIN_UNPOWER_SERVO 4      // pin vers oe du pca9685
 
 ```
 la definition de chaque corde est faite dans le tableau de cordes stringConfigs[NUM_STRINGS]
@@ -35,6 +36,6 @@ struct StringConfig {
   int pinServoPluck;     // Pin pour le servo de grattage
   int AngleServoPluck;   // angle servo de grattage contre la corde
   int angleServoFret[fretsNumbers]; // angle de chaque servomoteur pour actionner la frette
-  bool sensServoFret[fretsNumbers]; // angle de chaque servomoteur pour actionner la frette
+  bool sensServoFret[fretsNumbers]; // sens de rotation pour desactiver la frette
 };
 ```
